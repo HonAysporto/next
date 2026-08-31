@@ -1,8 +1,9 @@
 import React from 'react'
+import Services from '.'
 
 const page = () => {
   return (
-    <div>This is the services page</div>
+    <div><Services/></div>
   )
 }
 

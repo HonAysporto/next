@@ -1,15 +1,16 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
   return (
              <header
-    className="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-3xl border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg">
+    className="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-3xl border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-5xl">
     <div className="px-4">
         <div className="flex items-center justify-between">
             <div className="flex shrink-0">
                 <a aria-current="page" className="flex items-center" href="/">
-                    <img className="h-7 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt=""/>
+                    <Image className="h-7 w-auto" src={"https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"} alt="" width={10} height={10}/>
                     <p className="sr-only">Website Title</p>
                 </a>
             </div>
